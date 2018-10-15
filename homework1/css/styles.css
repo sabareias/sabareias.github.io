@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background: #343434;
+  color: #FC90C1;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 200;
+  scroll-behavior: smooth;
+  font-size: 24px;
+}
+
+header{
+  padding: 40px;
+}
+
+h1 {
+  line-height: .8;
+}
+
+p {
+  margin: 1em 0;
+}
+
+nav {
+  padding: 1em 0;
+  font-size: 16px;
+  text-align: center;
+}
+
+a {
+  color: white;
+  margin: 20px;
+  padding: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 1px solid white;
+}
+
+#vyrus {
+  color: #343434;
+  border: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+#vyrus:hover {
+  color: white;
+}
+
+#work {
+  background-color: #FC90C1;
+  padding: 40px;
+  color: white;
+  column-count: 2;
+}
+
+#hobbies {
+  padding: 40px;
+}
+
+#gallery {
+  column-count: 3;
+  column-gap: 0;
+  background-color: #FC90C1;
+}
+
+div {
+  break-inside: avoid;
+}
+
+img {
+  width: 100%;
+  display: block;
+  height: calc(100vw / 3);
+  object-fit: cover;
+  
+
+}
+
+footer {
+  text-align: center;
+}
