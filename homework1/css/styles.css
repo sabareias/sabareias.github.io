@@ -5,7 +5,7 @@
 
 html {
   background: #343434;
-  color: #FC90C1;
+  color: #BF99B2;
   font-family: 'Raleway', sans-serif;
   font-weight: 200;
   scroll-behavior: smooth;
@@ -18,6 +18,15 @@ header{
 
 h1 {
   line-height: .8;
+  color: #936784;
+}
+
+h2 {
+  color: #936784;
+}
+
+strong {
+  color: #936784;
 }
 
 p {
@@ -39,8 +48,14 @@ a {
   border: 1px solid white;
 }
 
+a:hover {
+  color: #BF99B2;
+  border: 1px solid #BF99B2;
+  transition: 0.3s;
+}
+
 #vyrus {
-  color: #343434;
+  color: #BF99B2;
   border: 0px;
   margin: 0px;
   padding: 0px;
@@ -50,33 +65,58 @@ a {
 }
 
 #work {
-  background-color: #FC90C1;
+  background-color: #BF99B2;
   padding: 40px;
   color: white;
   column-count: 2;
+  background-image: url(../images/arcade2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: scroll;
 }
 
 #hobbies {
   padding: 40px;
+  column-count: 2;
 }
 
 #gallery {
   column-count: 3;
   column-gap: 0;
-  background-color: #FC90C1;
+  background-color: #BF99B2;
 }
 
 div {
   break-inside: avoid;
 }
 
-img {
+
+img#h{
+  width: 100%;
+  object-fit: cover;
+}
+
+img#gallery {
   width: 100%;
   display: block;
   height: calc(100vw / 3);
   object-fit: cover;
 }
+img#gallery:hover {
+  opacity: 0.75;
+  transition: .5s;
+}
+
+img#pixel {
+  margin-top: -90px;
+  padding-left: 15px;
+  width: 22%;
+  float: right;
+  overflow: auto;
+}
 
 footer {
   text-align: center;
+  padding-bottom: 40px;
 }
