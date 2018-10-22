@@ -1,0 +1,111 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #f0efef;
+  color: #606161;
+  font-weight: 300;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-columns: 65% 35%;
+  grid-template-rows: 10vh auto minmax(20vh, 30vh);
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer"
+}
+header {
+  grid-area: header;
+  background-color: #033048;
+  margin: -1em;
+}
+main {
+  grid-area: main;
+  margin: 1em;
+}
+aside {
+  grid-area: aside;
+  margin: 1em;
+}
+footer {
+  grid-area: footer;
+  background-color: #033048;
+  text-align: center;
+  color: white;
+  font-size: 0.5em;
+  margin: -1em;
+}
+main h1 {
+  color: #033048;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f9e42e;
+  font-weight: 600;
+  align-content: flex-end;
+  padding: 1em;
+}
+
+
+header img {
+  width: 10%;
+  text-align: center;
+}
+
+main p::first-letter {
+    float: left;
+    margin-top: -1.5vh;
+    margin-right: 1vh;
+    font-size: 300%;
+    color: #606161;
+    font-weight: 800;
+}
+
+main a{
+  text-decoration: none;
+  color: #033048;
+  font-weight: 600;
+  float: right;
+}
+
+
+article {
+  border-bottom: solid;
+  border-width: 0.1vh;
+}
+
+aside h2 {
+  color: #033048;
+  font-weight: 600;
+  font-size: 100%;
+}
+
+aside a {
+  text-decoration: none;
+  color: #033048;
+  font-weight: 200;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+  width: 13vh;
+  align-self: center;
+  margin-top: 2.5em;
+}
+#nav {
+  width: 4vh;
+  margin: 0.5em;
+
+}
