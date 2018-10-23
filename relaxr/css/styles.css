@@ -1,9 +1,18 @@
+/*
+background color: #f0efef
+yellow: #f9e42e
+dark blue: #033048
+light grey: #606161
+almost black: #121212
+*/
+
 * {
-  font-family: 'Open Sans', sans-serif;
   box-sizing: border-box;
+  margin: 0;
 }
 
 html {
+  font-family: 'Open Sans', sans-serif;
   background-color: #f0efef;
   color: #606161;
   font-weight: 300;
@@ -11,101 +20,138 @@ html {
 
 body {
   display: grid;
-  min-height: 100vh;
-  grid-template-columns: 65% 35%;
-  grid-template-rows: 10vh auto minmax(20vh, 30vh);
   grid-template-areas:
     "header header"
     "main aside"
-    "footer footer"
+    "cta cta"
+    "footer footer";
+  grid-template-columns: 65% 35%;
+  grid-column-gap: 2rem;
 }
+
+a {
+  text-decoration: none;
+  color: #033048;
+}
+
 header {
   grid-area: header;
   background-color: #033048;
-  margin: -1em;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
+
+.logo {
+  height: 2rem;
+}
+
+header nav {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+}
+
+header a {
+  color: #f9e42e;
+  font-weight: 600;
+}
+
 main {
   grid-area: main;
-  margin: 1em;
+  padding-left: 2rem;
 }
+
+article {
+  margin: 1rem 0;
+}
+
+main h2 {
+  font-size: 2em;
+  color: #033048;
+}
+
+main img {
+  width: 100%;
+}
+
+main p {
+  font-size: 1.1em;
+}
+
+article p:first-of-type::first-letter {
+  font-size: 2rem;
+  font-weight: 800;
+  float: left;
+  margin-right: .25em;
+}
+
+article a {
+  display: block;
+  border-bottom: 1px solid;
+  text-align: right;
+  padding: 1rem 0;
+}
+
 aside {
   grid-area: aside;
-  margin: 1em;
+  padding: 2rem 2rem 2rem 0;
 }
+
+aside h3,
+aside nav,
+aside p {
+  margin-bottom: 1rem;
+}
+
+aside h3 {
+  color: #033048;
+}
+aside nav a {
+  display: block;
+}
+
+aside div {
+  background: white;
+  font-size: 2rem;
+  font-weight: 800;
+  text-align: center;
+  padding: 1rem;
+  min-height: 30vh;
+}
+
+#cta {
+  grid-area: cta;
+  background-color: #f9e42e;
+  padding: 2rem;
+  text-align: center;
+}
+
+#cta button {
+  background: #033048;
+  font-size: 1.5em;
+  font-weight: 600;
+  color: white;
+  padding: 1rem 1.5rem;
+  border-color: transparent;
+  border-radius: 8px;
+}
+
 footer {
   grid-area: footer;
   background-color: #033048;
   text-align: center;
+  padding: 2rem;
+}
+
+footer nav img {
+  height: 2rem;
+  margin: 1rem;
+}
+
+
+footer::after {
+  content: "Copyright 2015. Relaxr.";
   color: white;
-  font-size: 0.5em;
-  margin: -1em;
-}
-main h1 {
-  color: #033048;
-  font-weight: 600;
-}
-
-nav a {
-  text-decoration: none;
-  color: #f9e42e;
-  font-weight: 600;
-  align-content: flex-end;
-  padding: 1em;
-}
-
-
-header img {
-  width: 10%;
-  text-align: center;
-}
-
-main p::first-letter {
-    float: left;
-    margin-top: -1.5vh;
-    margin-right: 1vh;
-    font-size: 300%;
-    color: #606161;
-    font-weight: 800;
-}
-
-main a{
-  text-decoration: none;
-  color: #033048;
-  font-weight: 600;
-  float: right;
-}
-
-
-article {
-  border-bottom: solid;
-  border-width: 0.1vh;
-}
-
-aside h2 {
-  color: #033048;
-  font-weight: 600;
-  font-size: 100%;
-}
-
-aside a {
-  text-decoration: none;
-  color: #033048;
-  font-weight: 200;
-}
-
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-#logo {
-  width: 13vh;
-  align-self: center;
-  margin-top: 2.5em;
-}
-#nav {
-  width: 4vh;
-  margin: 0.5em;
-
 }
