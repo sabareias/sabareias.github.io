@@ -138,6 +138,10 @@ button:hover {
   padding-bottom: 10px;
 }
 
+.front {
+  width: 50%;
+}
+
 
 
 .tabs {
