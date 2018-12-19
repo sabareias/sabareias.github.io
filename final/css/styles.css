@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-family: 'Lato', sans-serif;
   text-align: center;
@@ -5,7 +9,6 @@ html {
   color: #301b28;
   margin: 0;
 }
-
 
 a {
   text-decoration: none;
@@ -26,6 +29,26 @@ h2 {
   color: #523a4d;
 }
 
+ul {
+  list-style-type: none;
+}
+
+button {
+  background-color: #6c8973;
+  padding: 1em;
+  font-size: 1em;
+  border-radius: 3px;
+  border: none;
+}
+
+a > button {
+  color: #adc9b3;
+}
+
+button:hover {
+  color: #374c3c;
+  transition: 1s;
+}
 
 .container {
   right: 0px;
@@ -39,28 +62,6 @@ h2 {
   flex-direction: column;
 }
 
-
-ul {
-  list-style-type: none;
-}
-
-button {
-  background-color: #301b28;
-  padding: 1em;
-  font-size: 1em;
-  border-radius: 3px;
-  border: none;
-}
-
-a > button {
-  color: #e5c7da;
-}
-
-button:hover {
-  color: #523a4d;
-  transition: 1s;
-}
-
 .answer {
   font-size: 2em;
   display: flex;
@@ -72,4 +73,112 @@ button:hover {
   position: fixed;
   bottom: 50px;
   font-weight: 300;
+}
+
+.quiz {
+  position: absolute;
+  display: inline;
+}
+
+.header {
+  height: 10vh;
+  width: 100%;
+  display: flex;
+  background-color: #523a4d;
+  justify-content: space-evenly;
+  align-content: center;
+  padding-top: 1.25em;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.header > a {
+  color: #cee2d2;
+}
+
+.pkmn {
+  height: 50%;
+}
+
+.hide {
+  display: none;
+}
+
+.diagram {
+  float: right;
+  width: 25%;
+  display: block;
+  position: relative;
+  padding-left: 1rem;
+  margin-top: 2.5rem;
+}
+
+.about {
+  display: inline-block;
+  overflow: auto;
+  width: 80%;
+  text-align: justify;
+  margin-right: 5px;
+  font-size: 1.1em;
+}
+
+.about-pkmn{
+  display: inline-block;
+  overflow: auto;
+  width: 75%;
+}
+
+.about-img {
+  width: 20%;
+  float: right;
+  display: block;
+  position: relative;
+  padding-bottom: 10px;
+}
+
+
+
+.tabs {
+  position: relative;
+  display: inline-block;
+  min-height: 200px; /* This part sucks */
+  clear: both;
+  margin: 25px 0;
+  width: 75%;
+  background: #6c8973;
+}
+.tab {
+  float: left;
+}
+.tab label {
+  background: #6c8973;
+  color: #374c3c;
+  padding: 10px;
+  border: 1px solid #374c3c;
+  margin-left: -1px;
+  position: relative;
+  left: 1px;
+}
+.tab [type=radio] {
+  display: none;
+}
+.content {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  background: #adc9b3;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  border: 1px solid #374c3c;
+}
+[type=radio]:checked ~ label {
+  background: #adc9b3;
+  border-bottom: 1px solid #adc9b3;
+  z-index: 2;
+}
+[type=radio]:checked ~ label ~ .content {
+  z-index: 1;
 }
