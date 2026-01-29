@@ -46,7 +46,7 @@ function NavBar() {
                     {/* contact drop-down for large screens */}
                     <NavDropdown title="Contact" id="collasible-nav-dropdown" className="d-none d-lg-block">
                         <NavDropdown.Item href="https://www.linkedin.com/in/sabrinaareias" target="_blank">LinkedIn</NavDropdown.Item>
-                        <NavDropdown.Item href="https://github.com/sareias1" target="_blank">GitHub</NavDropdown.Item>
+                        <NavDropdown.Item href="https://github.com/sabareias" target="_blank">GitHub</NavDropdown.Item>
                         <NavDropdown.Item href="mailto:sabareias@gmail.com">Email</NavDropdown.Item>
                     </NavDropdown>
                     {/* contact links for smaller screens */}
