@@ -11,7 +11,7 @@ function Socials() {
         {
             aria: 'GitHub',
             icon: <FiGithub />,
-            href: 'https://github.com/sareias1',
+            href: 'https://github.com/sabareias',
         },
         {
             aria: 'Email',
