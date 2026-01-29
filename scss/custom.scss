@@ -1,0 +1,41 @@
+// Custom.scss
+
+// Include any default variable overrides here (though functions won't be available)
+$primary: #756a83;
+$secondary: #678b91;
+$info: #c47e5e;
+
+$body-bg-dark: #0f0f0f;
+$body-tertiary-bg-dark: #1b1b1b;
+
+$body-bg: #e9e8eb;
+$body-tertiary-bg: #dad8db;
+
+$position-values: (
+    0: 0,
+    50: 50%,
+    90: 90%,
+    100: 100%
+);
+
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+
+
+// Then add additional custom code here
+.socialIcons {
+    color: $primary;
+}
+.socialIcons:hover {
+    color: $primary;
+}
+.navLink {
+    cursor: pointer;
+}
+
+.navLink.active {
+    font-weight: bold;
+    text-decoration: underline;
+    color: $primary;
+}
