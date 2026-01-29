@@ -5,7 +5,6 @@ import {
     CPPBadge
 } from './TechBadges'
 import { FiGithub } from 'react-icons/fi'
-{/* import { FiGithub, FiLink } from 'react-icons/fi' */}
 import { type ReactElement } from 'react'
 
 interface LinkObject {
@@ -37,11 +36,11 @@ export const projectData: ProjectData[] = [
             'A fiber-arts project tracker with full CRUD functionality.',
         links: [
             {
-                link: 'https://github.com',
+                link: 'https://github.com/sabareias/knitnote.git',
                 icon: <FiGithub />,
             },
         ],
-        headerLink: 'https://github.com/',
+        headerLink: 'https://github.com/sabareias/knitnote.git',
     },
     {
         name: 'PomoPet',
@@ -54,10 +53,10 @@ export const projectData: ProjectData[] = [
             'A text-based productivity app that combines virtual pet simulation with a Pomodoro timer where users grow their pets by focusing.',
         links: [
             {
-                link: 'https://github.com/',
+                link: 'https://github.com/sabareias/pomopet.git',
                 icon: <FiGithub />,
             },
         ],
-        headerLink: 'https://github.com/',
+        headerLink: 'https://github.com/sabareias/pomopet.git',
     }
 ]
