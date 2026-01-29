@@ -8,7 +8,7 @@ function Skills() {
     return (
     <>
     <div id="skills" className="container py-4">
-        <Fade><h2 className="display-5">Skills</h2></Fade>
+        <Fade triggerOnce><h2 className="display-5">Skills</h2></Fade>
         <p></p>
         <Card>
             <Card.Img variant="top" src="holder.js/100px180" />

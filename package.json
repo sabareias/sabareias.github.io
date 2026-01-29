@@ -2,12 +2,12 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://sabareias.github.io/react-gh-pages",
+  "homepage": "https://sabareias.github.io/",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d dist -b gh-pages",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview"

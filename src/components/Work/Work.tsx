@@ -12,7 +12,7 @@ function Work() {
     <>
         <Element name="work" />
         <div className="container py-4 ">
-            <Fade><h2 className="display-5">Projects</h2></Fade>
+            <Fade triggerOnce><h2 className="display-5">Projects</h2></Fade>
             <div className="mt-4 d-flex row justify-content-center align-items-center g-3">
                 <div className="col-lg-6 ">
                     {projectData.map((project) => (

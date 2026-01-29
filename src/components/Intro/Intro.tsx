@@ -3,8 +3,8 @@ import { Fade } from "react-awesome-reveal";
 import { BsChevronDoubleDown } from "react-icons/bs";
 import { useEffect, useState } from "react";
 import TypedString from './TypedString'
-import ResumeButton from './global/ResumeButton'
-import Socials from './global/Socials'
+import ResumeButton from '../global/ResumeButton'
+import Socials from '../global/Socials'
 
 // 'Intro' page component
 function Intro() {

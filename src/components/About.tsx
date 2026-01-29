@@ -9,7 +9,7 @@ function About() {
     <>
     <Element name="about" />
     <div className="container py-4 mb-5">
-        <Fade><h2 className="display-5">About Me</h2></Fade>
+        <Fade triggerOnce><h2 className="display-5">About Me</h2></Fade>
         <div className="mt-4 d-flex row justify-content-center align-items-center">
             <div className="col-sm-8 col-md-6 col-lg-4 mb-3 mx-auto">
                 <img src={SabrinaHeadshot} alt="Sabrina Areias Headshot" className="img-fluid img-thumbnail rounded-circle" />
