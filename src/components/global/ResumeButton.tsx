@@ -7,7 +7,7 @@ function ResumeButton() {
     return (
         <>
         <a target="_blank" href={resumePDF} >
-            <Button variant="outline-secondary" >
+            <Button variant="outline-secondary" className="mt-4">
                 Resume&ensp;<FiArrowUpRight />
             </Button>
         </a>

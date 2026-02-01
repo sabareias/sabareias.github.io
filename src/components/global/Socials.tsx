@@ -20,7 +20,7 @@ function Socials() {
         },
     ]
     return (
-        <div className="mb-4">
+        <div className="">
             {socialsData.map((social, i) => (
                 <a
                     key={i}
