@@ -4,10 +4,10 @@ import "/scss/custom.scss";
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
-import App from './App.tsx'
+import Index from "./pages/Index";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <App />
+    <Index />
   </StrictMode>,
 )
