@@ -1,10 +1,8 @@
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/esm/Button';
-
 import { Link } from 'react-scroll';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 // toggles light vs dark mode theme
     function toggleTheme(event: React.MouseEvent<HTMLButtonElement>) {
@@ -43,14 +41,8 @@ function NavBar() {
                 <Nav className="me-auto">
                     <Nav.Link as={Link} to="about" smooth duration={500} spy offset={-70} activeClass="active" className="navLink">About</Nav.Link>
                     <Nav.Link as={Link} to="work" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" >Work</Nav.Link>
-                    {/* contact drop-down for large screens */}
-                    <NavDropdown title="Contact" id="collasible-nav-dropdown" className="d-none d-lg-block">
-                        <NavDropdown.Item href="https://www.linkedin.com/in/sabrinaareias" target="_blank">LinkedIn</NavDropdown.Item>
-                        <NavDropdown.Item href="https://github.com/sabareias" target="_blank">GitHub</NavDropdown.Item>
-                        <NavDropdown.Item href="mailto:sabareias@gmail.com">Email</NavDropdown.Item>
-                    </NavDropdown>
-                    {/* contact links for smaller screens */}
-                    <Nav.Link href="#contact" className="d-lg-none">Contact</Nav.Link>
+                    {/* <Nav.Link as={Link} to="contact" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" >Contact</Nav.Link>*/}
+                    
                 </Nav>
 
                 <Nav>
