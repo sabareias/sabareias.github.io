@@ -18,6 +18,19 @@ $position-values: (
     100: 100%
 );
 
+$spacer: 1rem;
+$spacers: (
+    0: 0,
+    1: $spacer * .25,
+    2: $spacer * .5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 4,
+    7: $spacer * 5
+);
+
+
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
@@ -38,4 +51,20 @@ $position-values: (
     font-weight: bold;
     text-decoration: underline;
     color: $primary;
+}
+
+.footer {
+    position: absolute;
+    width: 100%;
+    left: 0;
+}
+
+// 'back to top' button (center icon and keep it as a perfect circle)
+#toTop {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    padding: 0;
 }
