@@ -4,12 +4,13 @@ import { animateScroll } from 'react-scroll';
 import Button from 'react-bootstrap/esm/Button';
 import { SlArrowUp } from "react-icons/sl";
 
+// for scroll to top button
 const scrollOptions = {
     duration: 500,
     smooth: true,
 };
 
-// social media icons component
+// footer component
 function Footer() {
     return (
         <>
