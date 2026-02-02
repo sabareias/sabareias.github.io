@@ -1,6 +1,7 @@
 import Container from 'react-bootstrap/Container';
 import Button from 'react-bootstrap/esm/Button';
-import { Link } from 'react-scroll';
+import { animateScroll, Link as ScrollLink } from 'react-scroll';
+import { Link as RouterLink } from 'react-router-dom';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 
@@ -30,7 +31,7 @@ function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" fixed="top">
         <Container>
-            <Navbar.Brand href="/" aria-label="Homepage of Sabrina Areias's resume">Sabrina Areias</Navbar.Brand>
+            <Navbar.Brand as={RouterLink} to="/" aria-label="Homepage of Sabrina Areias's resume" onClick={() => animateScroll.scrollToTop({duration: 500, smooth: true})}>Sabrina Areias</Navbar.Brand>
 
             {/* theme toggle button for smaller screens */}
             <Button variant="outline-primary" onClick={toggleTheme} className="d-lg-none ms-auto me-2" aria-label="Toggle theme"><i className="bi bi-moon-fill theme-toggle-icon"></i></Button>
@@ -39,9 +40,9 @@ function NavBar() {
             
             <Navbar.Collapse id="responsive-navbar-nav" >
                 <Nav className="me-auto">
-                    <Nav.Link as={Link} to="about" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" aria-label="About section">About</Nav.Link>
-                    <Nav.Link as={Link} to="projects" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" aria-label="Projects section">Projects</Nav.Link>
-                    {/* <Nav.Link as={Link} to="contact" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" >Contact</Nav.Link>*/}
+                    <Nav.Link as={ScrollLink} to="about" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" aria-label="About section">About</Nav.Link>
+                    <Nav.Link as={ScrollLink} to="projects" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" aria-label="Projects section">Projects</Nav.Link>
+                    {/* <Nav.Link as={ScrollLink} to="contact" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" >Contact</Nav.Link>*/}
                     
                 </Nav>
 
