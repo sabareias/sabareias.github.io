@@ -1,9 +1,7 @@
 import '../../App.css'
 import { Fade } from "react-awesome-reveal";
 import { Element } from 'react-scroll';
-
-
-import { projectData } from './ProjectData'
+import { projectData } from '../../data/ProjectData'
 import ProjectCard from './ProjectCard';
 
 // Projects and work experience page component
