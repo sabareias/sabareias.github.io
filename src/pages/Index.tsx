@@ -3,7 +3,7 @@ import '../App.css'
 import NavBar from '../components/global/NavBar'
 import Intro from '../components/Intro/Intro'
 import About from '../components/About'
-import Work from '../components/Work/Work'
+import Projects from '../components/Projects/Projects'
 import Footer from '../components/global/Footer'
 {/* import Skills from './components/Skills' */}
 
@@ -15,7 +15,7 @@ function Index() {
     <Intro />
     <About />
     {/* <Skills /> */}
-    <Work />
+    <Projects />
     <Footer />
   </>
   )

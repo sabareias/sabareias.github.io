@@ -30,17 +30,17 @@ function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" fixed="top">
         <Container>
-            <Navbar.Brand href="/">Sabrina Areias</Navbar.Brand>
+            <Navbar.Brand href="/" aria-label="Homepage of Sabrina Areias's resume">Sabrina Areias</Navbar.Brand>
 
             {/* theme toggle button for smaller screens */}
-            <Button variant="outline-primary" onClick={toggleTheme} className="d-lg-none ms-auto me-2"><i className="bi bi-moon-fill theme-toggle-icon"></i></Button>
+            <Button variant="outline-primary" onClick={toggleTheme} className="d-lg-none ms-auto me-2" aria-label="Toggle theme"><i className="bi bi-moon-fill theme-toggle-icon"></i></Button>
 
             <Navbar.Toggle aria-controls="responsive-navbar-nav" />
             
             <Navbar.Collapse id="responsive-navbar-nav" >
                 <Nav className="me-auto">
-                    <Nav.Link as={Link} to="about" smooth duration={500} spy offset={-70} activeClass="active" className="navLink">About</Nav.Link>
-                    <Nav.Link as={Link} to="work" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" >Work</Nav.Link>
+                    <Nav.Link as={Link} to="about" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" aria-label="About section">About</Nav.Link>
+                    <Nav.Link as={Link} to="projects" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" aria-label="Projects section">Projects</Nav.Link>
                     {/* <Nav.Link as={Link} to="contact" smooth duration={500} spy offset={-70} activeClass="active" className="navLink" >Contact</Nav.Link>*/}
                     
                 </Nav>
