@@ -36,7 +36,7 @@ const ProjectCard: FC<ProjectCardProps> = props => {
                 {props.description}
                 </Card.Text>
                 
-                <Button variant="primary" aria-label={`Read more about ${props.name}`} href={`#/projects/${props.id}`}>Read More</Button>
+                <Button variant="primary" aria-label={`Read more about ${props.name}`} href={`/projects/${props.id}`}>Read More</Button>
                 <Button variant="outline-secondary" aria-label={`Visit ${props.name} on GitHub`} href={props.headerLink} className="ms-2" target="_blank"><FiGithub /></Button>
             </Card.Body>
         </Card>
