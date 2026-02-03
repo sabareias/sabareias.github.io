@@ -3,14 +3,14 @@
 import "/scss/custom.scss";
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import { createBrowserRouter, RouterProvider } from "react-router-dom"; 
+import { createHashRouter, RouterProvider } from "react-router-dom"; 
 
 import Index from "./pages/Index";
 import ProjectsPage from "./pages/Projects/ProjectsPage";
 import ProjectPage from "./pages/Project/ProjectPage";
 import NotFound from "./pages/NotFound";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
   path: "/",
   element: <Index />,
