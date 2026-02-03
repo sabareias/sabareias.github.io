@@ -25,8 +25,9 @@ function ProjectsPage() {
                             name={project.name || ''}
                             type={project.type || ''}
                             id={project.id || ''}
-                            tags={project.tags || ''}
+                            tags={project.tags ?? []}
                             imageSrc={project.imageSrc || ''}
+                            videoSrc={project.videoSrc || ''}
                             description={project.description || ''}
                             links={project.links?.map(linkObj => (
                                 <a 

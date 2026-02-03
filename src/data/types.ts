@@ -9,8 +9,9 @@ export interface ProjectObject {
     name: string;
     type: string;
     id: string;
-    tags: Array<ReactElement>;
+    tags?: Array<ReactElement>;
     imageSrc: string;
+    videoSrc?: string;
     tagline: string;
     description: string;
     links?: Array<LinkObject>;

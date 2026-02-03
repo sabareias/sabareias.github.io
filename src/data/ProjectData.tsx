@@ -15,6 +15,7 @@ export const projectData: ProjectObject[] = [
         tagline: 'A fiber-arts project tracker',
         tags: [<ReactBadge key="react" />, <ExpressBadge key="express" />, <SQLiteBadge key="sqlite" />],
         imageSrc: '/projects/KnitNote/KnitNote.png',
+        videoSrc: '/projects/KnitNote/KnitNotePreview.mp4',
         description:
             'A fiber-arts project tracker with full CRUD functionality.',
         links: [

@@ -8,8 +8,9 @@ interface ProjectCardProps {
     name: string
     type: string
     id: string
-    tags: Array<ReactElement>
+    tags?: Array<ReactElement>
     imageSrc: string
+    videoSrc?: string
     description: string
     links?: Array<ReactElement>
     headerLink: string
