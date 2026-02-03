@@ -15,10 +15,11 @@ interface ProjectCardProps {
     headerLink: string
 }
 
+// Project card component
 const ProjectCard: FC<ProjectCardProps> = props => {
     return (
         <Card className="mb-4 shadow">
-            <a href={props.headerLink} aria-label={`Visit ${props.name} on GitHub`}>
+            <a href={props.headerLink} aria-label={`Visit ${props.name} on GitHub`} target="_blank">
             <Card.Img
             variant="top" 
             src={props.imageSrc} 
