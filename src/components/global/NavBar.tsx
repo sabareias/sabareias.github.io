@@ -31,7 +31,7 @@ function NavBar() {
     return (
         <Navbar collapseOnSelect expand="lg" className="bg-body-tertiary" fixed="top">
         <Container>
-            <Navbar.Brand as={RouterLink} to="/" aria-label="Homepage of Sabrina Areias's resume" onClick={() => animateScroll.scrollToTop({duration: 500, smooth: true})}>Sabrina Areias</Navbar.Brand>
+            <Navbar.Brand as={RouterLink} to="/" aria-label="Homepage" onClick={() => animateScroll.scrollToTop({duration: 500, smooth: true})}>Sabrina Areias</Navbar.Brand>
 
             {/* theme toggle button for smaller screens */}
             <Button variant="outline-primary" onClick={toggleTheme} className="d-lg-none ms-auto me-2" aria-label="Toggle theme"><i className="bi bi-moon-fill theme-toggle-icon"></i></Button>
