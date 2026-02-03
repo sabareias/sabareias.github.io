@@ -31,9 +31,21 @@ function ProjectContent(props: ProjectContentProps) {
         <Container className="py-4 mb-5 text-start d-flex flex-column justify-content-center align-items-center">
             
             <div className="mt-4 row justify-content-center g-3 col-lg-6 col-md-8 col-sm-12">
-                <a href={projectData?.headerLink} aria-label={`Visit ${projectData?.name} on GitHub`} target="_blank">
-                    <img src={projectData?.imageSrc} alt={`${projectData?.name} project screenshot`} className="img-fluid my-3 rounded-3 shadow"/>
-                </a>
+                
+                {/* displays video if videoSrc exists, else displays image */}
+                {projectData?.videoSrc ? (
+                    <video controls className="img-fluid my-3 rounded-3 shadow">
+                        <source src={projectData.videoSrc} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                ) : (
+                    
+                    <a href={projectData?.headerLink} aria-label={`Visit ${projectData?.name} on GitHub`} target="_blank">
+                        <img src={projectData?.imageSrc} alt={`${projectData?.name} project screenshot`} className="img-fluid my-3 rounded-3 shadow"/>
+                    </a>
+                    
+                )}
+
                 <span className="fw-bold text-uppercase mb-0" style={{color: "#756a83"}}>{projectData?.type}</span>
                 <div className="d-flex col align-items-center gap-3 mt-0">
                     <h2 className="display-5 ">{projectData?.name}</h2>
