@@ -34,7 +34,12 @@ $spacers: (
 
 @import "../node_modules/bootstrap/scss/bootstrap";
 
-
+.btn-outline-secondary, 
+.btn-outline-info {
+    --bs-btn-active-color: white;
+    --bs-btn-hover-color: white;
+    
+}
 
 // Then add additional custom code here
 .socialIcons {
