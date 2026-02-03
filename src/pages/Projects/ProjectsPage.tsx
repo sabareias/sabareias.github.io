@@ -10,13 +10,12 @@ import ProjectCard from "../../components/Projects/ProjectCard";
 function ProjectsPage() {
     return (
         <>
-        <div className="vh-100" style={{marginBottom: "-144px" }}>
         <Breadcrumb>
             <Breadcrumb.Item linkAs={RouterLink} linkProps={{ to: "/" }} aria-label="Homepage">Home</Breadcrumb.Item>
             <Breadcrumb.Item active linkAs={RouterLink} linkProps={{ to: "/projects" }} aria-label="Projects page">Projects</Breadcrumb.Item>
         </Breadcrumb>
         <h1 className="text-center">My Projects</h1>
-        <div className="container d-flex py-4 justify-content-center align-items-center"> 
+        <div className="container d-flex py-4 justify-content-center align-items-center mb-7"> 
             <div className="row justify-content-center g-3">
                 {projectData.map((project, i) => (
                     <div className="col-lg-4 col-md-6 col-sm-12" key={project.id}>
@@ -42,7 +41,6 @@ function ProjectsPage() {
                     </div>
                 ))}
             </div>
-        </div>
         </div>
         <Footer />
         </>
