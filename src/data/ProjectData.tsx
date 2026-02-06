@@ -33,6 +33,7 @@ export const projectData: ProjectObject[] = [
         tagline: 'Virtual pet productivity app',
         tags: [<CPPBadge key="cpp" />],
         imageSrc: '/projects/PomoPet/PomoPet.png',
+        videoSrc: '/projects/PomoPet/PomoPetPreview.mp4',
         description:
             'A text-based productivity app that combines virtual pet simulation with a Pomodoro timer where users grow their pets by focusing.',
         links: [
