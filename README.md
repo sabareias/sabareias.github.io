@@ -1,6 +1,3 @@
 # Portfolio
-> My personal portfolio page
-
-## Technologies Used
-- **Frontend:** React & Typescript
-- **Styling:** Bootstrap / React Bootstrap
+Personal portfolio built with React, TypeScript, Vite, and Bootstrap.
+**[View live →](https://sabareias.github.io/)**
