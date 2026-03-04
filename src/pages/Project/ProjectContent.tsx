@@ -12,6 +12,7 @@ interface ProjectContentProps {
 function ProjectContent(props: ProjectContentProps) {
     const projectData = props.projectData;
     const [markdown, setMarkdown] = useState<string>('');
+    const liveLink = projectData?.links?.find((link) => link.linkType === 'live');
     
     // import markdown file based on project id
     useEffect(() => {
@@ -51,6 +52,10 @@ function ProjectContent(props: ProjectContentProps) {
                     <h2 className="display-5 ">{projectData?.name}</h2>
 
                     <Button variant="outline-secondary " aria-label={`Visit ${projectData?.name} on GitHub`} href={projectData?.headerLink} className="ms-2" target="_blank"><FiGithub /></Button>
+                    {liveLink && (
+                        <Button variant="outline-secondary" aria-label={`Visit ${projectData?.name} live`} href={liveLink.link} target="_blank">{liveLink.icon}</Button>
+                    )}
+                    
                 </div>
                 <hr />
                 <ReactMarkdown>{markdown}</ReactMarkdown>
