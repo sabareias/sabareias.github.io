@@ -25,7 +25,7 @@ export const projectData: ProjectObject[] = [
                 linkType: 'github',
             },
             {
-                link: 'https://knitnote.sabareias.com',
+                link: 'https://knitnote.vercel.app/',
                 icon: <FiExternalLink />,
                 linkType: 'live',
             },
