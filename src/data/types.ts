@@ -3,6 +3,7 @@ import { type ReactElement } from 'react';
 export interface LinkObject {
     link: string;
     icon: ReactElement;
+    linkType?: 'github' | 'live';
 }
 
 export interface ProjectObject {
