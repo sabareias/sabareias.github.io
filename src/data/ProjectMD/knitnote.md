@@ -1,16 +1,24 @@
-Knit Note is a fiber-arts project tracker where users can store data on their knit or crochet projects such as the name of the yarn or pattern used, start and end dates, category of item, and more.
+**Knit Note** is a fiber-arts project tracker — create, edit, and track knitting and crochet projects with full CRUD, client- and server-side validation, and a simple card-based UI.
 
-The app connects to a relational database to ensure reliable storage of data and utilizes RESTful API endpoints to separate frontend logic from backend data handling. 
+**[Live preview →](https://knitnote.vercel.app/)**
 
-## Tech Stack
+## Tech stack
 
-### Frontend
--   **ReactJS** with Bootstrap
+| Layer    | Technology                  |
+| -------- | --------------------------- |
+| Frontend | React                       |
+| Styling  | Bootstrap / React Bootstrap |
+| Backend  | Express                     |
+| Database | SQLite                      |
 
-### Backend
--   **Express**
--   **SQLite**
+The **live site** runs a [Vercel-ready version](https://github.com/sabareias/knitnote/tree/main/knit-note-vercel) (same repo): Next.js (App Router), NextAuth with Google sign-in, Neon (PostgreSQL). Projects are private to your account.
+
+## Features
+
+- **CRUD** — Add projects (title, category, craft, optional pattern/yarn, dates), view as cards, edit in a modal, mark in progress or completed, and delete.
+- **Validation** — Client-side error messages for invalid input (e.g. title length, required fields, date rules); server-side checks on POST/PATCH.
 
 ## Resources
--   Logo made using free resources from [Canva](https://www.canva.com/)
--   [Scrollbar transition method used](https://stackoverflow.com/a/74050413)
+
+- Logo and assets from [Canva](https://www.canva.com/) (free resources)
+- [Scrollbar transition](https://stackoverflow.com/a/74050413) (Stack Overflow)
