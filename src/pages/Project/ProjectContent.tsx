@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { type ProjectObject } from "../../data/types";
 import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 import { FiGithub } from 'react-icons/fi'
 import { Button, Container } from "react-bootstrap";
 
@@ -58,7 +59,16 @@ function ProjectContent(props: ProjectContentProps) {
                     
                 </div>
                 <hr />
-                <ReactMarkdown>{markdown}</ReactMarkdown>
+                <div className="project-markdown">
+                    <ReactMarkdown
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                            table: ({ node, ...props }) => <table className="table" {...props} />,
+                        }}
+                    >
+                        {markdown}
+                    </ReactMarkdown>
+                </div>
             </div>
         </Container>
             
