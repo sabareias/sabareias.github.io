@@ -40,3 +40,23 @@
 .read-the-docs {
   color: #888;
 }
+
+
+
+.project-markdown {
+  a {
+      color: #678b91;
+  }
+  a:hover {
+      color: #3f5f64;
+      transition: color 0.3s ease;
+  }
+  /* align markdown lists from project pages with surrounding content */
+  ol, ul {
+    padding-left: 1.25em;
+    margin-bottom: 0;
+  }
+  li {
+    margin-bottom: 0.25em;
+  }
+}
