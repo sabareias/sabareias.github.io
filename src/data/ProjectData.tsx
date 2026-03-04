@@ -4,7 +4,7 @@ import {
     ReactBadge,
     CPPBadge
 } from '../components/Projects/TechBadges'
-import { FiGithub } from 'react-icons/fi'
+import { FiExternalLink, FiGithub } from 'react-icons/fi'
 import { type ProjectObject } from './types'
 
 export const projectData: ProjectObject[] = [
@@ -22,6 +22,12 @@ export const projectData: ProjectObject[] = [
             {
                 link: 'https://github.com/sabareias/knitnote.git',
                 icon: <FiGithub />,
+                linkType: 'github',
+            },
+            {
+                link: 'https://knitnote.sabareias.com',
+                icon: <FiExternalLink />,
+                linkType: 'live',
             },
         ],
         headerLink: 'https://github.com/sabareias/knitnote.git',
@@ -40,6 +46,7 @@ export const projectData: ProjectObject[] = [
             {
                 link: 'https://github.com/sabareias/pomopet.git',
                 icon: <FiGithub />,
+                linkType: 'github',
             },
         ],
         headerLink: 'https://github.com/sabareias/pomopet.git',
