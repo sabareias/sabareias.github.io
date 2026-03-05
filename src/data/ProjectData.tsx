@@ -25,12 +25,12 @@ export const projectData: ProjectObject[] = [
                 linkType: 'github',
             },
             {
-                link: 'https://knitnote.vercel.app/',
+                link: 'https://knitnote.vercel.app',
                 icon: <FiExternalLink />,
                 linkType: 'live',
             },
         ],
-        headerLink: 'https://github.com/sabareias/knitnote.git',
+        headerLink: 'https://knitnote.vercel.app',
     },
     {
         name: 'PomoPet',
