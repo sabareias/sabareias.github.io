@@ -8,6 +8,7 @@ import { type ProjectObject } from '../../data/types'
 // Project card component
 const ProjectCard: FC<ProjectObject> = props => {
     const liveLink = props.links?.find((link) => link.linkType === 'live');
+    const githubLink = props.links?.find((link) => link.linkType === 'github');
     return (
         <Card className="mb-4 shadow">
             <a href={props.headerLink} aria-label={`Visit ${props.name} on GitHub`} target="_blank">
@@ -29,7 +30,9 @@ const ProjectCard: FC<ProjectObject> = props => {
                 </Card.Text>
                 
                 <Button variant="primary" aria-label={`Read more about ${props.name}`} href={`#/projects/${props.id}`}>Read More</Button>
-                <Button variant="outline-secondary" aria-label={`Visit ${props.name} on GitHub`} href={props.headerLink} className="ms-2" target="_blank"><FiGithub /></Button>
+                {githubLink && (
+                    <Button variant="outline-secondary" aria-label={`Visit ${props.name} on GitHub`} href={githubLink.link} className="ms-2" target="_blank"><FiGithub /></Button>
+                )}
                 {liveLink && (
                     <Button variant="outline-secondary" aria-label={`Visit ${props.name} live`} href={liveLink.link} target="_blank" className='ms-2'>{liveLink.icon}</Button>
                 )}
