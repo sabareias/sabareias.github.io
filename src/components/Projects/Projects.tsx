@@ -18,18 +18,12 @@ function Projects() {
                                 name={project.name || ''}
                                 type={project.type || ''}
                                 id={project.id || ''}
+                                tagline={project.tagline || ''}
                                 tags={project.tags ?? []}
                                 imageSrc={project.imageSrc || ''}
                                 videoSrc={project.videoSrc ?? ''}
                                 description={project.description || ''}
-                                links={project.links?.map(linkObj => (
-                                    <a 
-                                        key={linkObj.link}
-                                        href={linkObj.link}
-                                    >
-                                        {linkObj.icon}
-                                    </a>
-                                ))}
+                                links={project.links}
                                 headerLink={project.headerLink || ''} 
                             />
                         </div>
