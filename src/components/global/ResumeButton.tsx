@@ -1,12 +1,11 @@
-import Button from 'react-bootstrap/esm/Button'
-import resumePDF from '../../assets/SabrinaAreias_Resume.pdf';
+import Button from 'react-bootstrap/esm/Button';
 import { FiArrowUpRight } from "react-icons/fi";
 
 {/* open resume (new tab) button */}
 function ResumeButton() {
     return (
         <>
-        <a target="_blank" href={resumePDF} >
+        <a href="assets/SabrinaAreias_Resume-CG0aBAXK.pdf" target="_blank" rel="noreferrer">
             <Button variant="outline-secondary" className="mt-4">
                 Resume&ensp;<FiArrowUpRight />
             </Button>
