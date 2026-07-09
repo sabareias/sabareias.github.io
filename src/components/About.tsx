@@ -16,11 +16,11 @@ function About() {
             </div>
             <div className="col-sm-12 col-md-8 col-lg-8 text-start mx-auto">
                 <Fade triggerOnce direction="up" cascade delay={100} damping={0.1}>
-                <p>👋🏻 Hey, I'm Sabrina and I'm a software developer with a passion for solving puzzles.</p>
-                <p>🌱 My programming journey began on Neopets as a tween obsessed with making cool pages for my virtual pets. Teaching myself HTML and CSS at a young age was the first step towards developing my love for creating with code!</p>
+                <p>👋🏻 Hey, I'm Sabrina and I'm a software developer who loves solving puzzles.</p>
+                <p>🌱 My programming journey began on the gaming site Neopets as a tween where I taught myself HTML and CSS to make cool pages for my virtual pets.</p>
                 <p>🎓 I graduated from <b>Bristol Community College</b> in December of 2025 with a degree in Computer Information Systems concentrating on <a href="https://catalog.bristolcc.edu/computer-information-systems/computer-programming-and-web-development">Programming and Web Development</a>.</p>
-                <p>👩🏻‍💻 I'm experienced in <b>full-stack web development and C++</b>. I scratch my constant itch for learning by trying out new tools and working towards strengthening my skills.</p>
-                <p>🧶 Outside of programming, I enjoy knitting, rock climbing, and video games, all of which feed my love for <b>creativity and problem solving</b>.</p>
+                <p>👩🏻‍💻 I'm experienced in <b>full-stack web development and C++</b>.</p>
+                <p>🧶 Outside of programming, I enjoy knitting, rock climbing, and video games.</p>
                 </Fade>
             </div>
         </div>
